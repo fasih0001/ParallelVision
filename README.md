@@ -26,7 +26,7 @@
 [![LinkedIn][linkedin-shield]][linkedin-url]
 -->
 
-[![Contributors](https://img.shields.io/github/contributors/username/repository.svg?style=flat-square)](https://github.com/fasih0001/ParallelVision/graphs/contributors)
+[![Contributors](https://img.shields.io/github/contributors/username/repository.svg?style=flat-square)][contributors-url]
 [![Forks](https://img.shields.io/github/forks/username/repository.svg?style=flat-square)](https://github.com/fasih0001/ParallelVision/fork)
 [![Stars](https://img.shields.io/github/stars/username/repository.svg?style=flat-square)](https://github.com/fasih0001/ParallelVision/stargazers)
 [![Issues](https://img.shields.io/github/issues/username/repository.svg?style=flat-square)](https://github.com/fasih0001/ParallelVision/issues)
@@ -106,9 +106,8 @@ Join us in this collaborative effort to explore innovative approaches, experimen
 
 ### Built With
 
-This section should list any major frameworks/libraries used to bootstrap your project. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
 
-* [![TensorFlow][Tensorflow]][Next-url]
+*[![TensorFlow](https://img.shields.io/badge/-TensorFlow-orange?logo=tensorflow&logoColor=white&style=flat-square)][Next-url]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -117,33 +116,36 @@ This section should list any major frameworks/libraries used to bootstrap your p
 <!-- GETTING STARTED -->
 ## Getting Started
 
-This is an example of how you may give instructions on setting up your project locally.
-To get a local copy up and running follow these simple example steps.
+The Y-Net architecture is designed to run two Convolutional Neural Networks (CNNs) in parallel using the One CNN per Core approach. This approach is particularly useful in resource-constrained systems where multiple CNNs need to be executed simultaneously.
 
 ### Prerequisites
 
-This is an example of how to list things you need to use the software and how to install them.
-* npm
-  ```sh
-  npm install npm@latest -g
-  ```
+Before diving into the project, make sure you have the following prerequisites installed on your system:
+
+1. Python (version 3.6 or above)
+1. TensorFlow (version 2.0 or above)
+1. Any additional dependencies or libraries specific to your implementation
 
 ### Installation
 
-_Below is an example of how you can instruct your audience on installing and setting up your app. This template doesn't rely on any external dependencies or services._
+To install the necessary dependencies, follow these steps:
 
-1. Get a free API Key at [https://example.com](https://example.com)
-2. Clone the repo
+1. Create a new virtual environment (optional but recommended):
+```sh
+python3 -m venv ynet-env
+source ynet-env/bin/activate
+```
+3. Clone the repo
    ```sh
-   git clone https://github.com/your_username_/Project-Name.git
+   git clone https://github.com/fasih0001/ParallelVision.git
    ```
-3. Install NPM packages
+3. Install TensorFlow:
    ```sh
-   npm install
+   pip install tensorflow
    ```
-4. Enter your API in `config.js`
-   ```js
-   const API_KEY = 'ENTER YOUR API';
+4. Install any other required dependencies:
+   ```sh
+   pip install numpy
    ```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -153,9 +155,27 @@ _Below is an example of how you can instruct your audience on installing and set
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
+To use the Y-Net architecture, follow these steps:
+1.Open core1/model.py and core2/model.py files to implement the CNN models for each core. Customize the architecture, layers, and training logic based on your requirements.
+1. In the main.py file, you can create instances of the CNN cores and orchestrate the parallel execution. Here's a basic example:
+```py
+from core1.model import Core1Model
+from core2.model import Core2Model
 
-_For more examples, please refer to the [Documentation](https://example.com)_
+# Instantiate the models
+core1 = Core1Model()
+core2 = Core2Model()
+
+# Train or perform other operations on the cores
+core1.train()
+core2.predict()
+```
+
+1. You can expand upon this example to include data loading, preprocessing, and any additional functionality you need for your project.
+```sh
+python main.py
+```
+This will execute your Y-Net architecture, running the two CNN cores in parallel.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -164,19 +184,15 @@ _For more examples, please refer to the [Documentation](https://example.com)_
 <!-- ROADMAP -->
 ## Roadmap
 
-- [x] Add Changelog
-- [x] Add back to top links
-- [ ] Add Additional Templates w/ Examples
-- [ ] Add "components" document to easily copy & paste sections of the readme
-- [ ] Multi-language Support
-    - [ ] Chinese
-    - [ ] Spanish
-
-See the [open issues](https://github.com/othneildrew/Best-README-Template/issues) for a full list of proposed features (and known issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+## Conclusion
+Congratulations! You have completed the initial setup and can now start exploring and expanding the Y-Net architecture. Feel free to modify, experiment, and optimize the architecture according to your specific use case.
 
+Remember to refer to the TensorFlow documentation and other relevant resources to further enhance your understanding of neural networks and parallel computing.
+
+Happy coding!
 
 <!-- CONTRIBUTING -->
 ## Contributing
@@ -221,19 +237,16 @@ Project Link: [https://github.com/your_username/repo_name](https://github.com/yo
 
 Use this space to list resources you find helpful and would like to give credit to. I've included a few of my favorites to kick things off!
 
-* [Choose an Open Source License](https://choosealicense.com)
-* [GitHub Emoji Cheat Sheet](https://www.webpagefx.com/tools/emoji-cheat-sheet)
-* [Malven's Flexbox Cheatsheet](https://flexbox.malven.co/)
-* [Malven's Grid Cheatsheet](https://grid.malven.co/)
+* [Choose an Open Source License](https://choosealicense.com) 
 * [Img Shields](https://shields.io)
 * [GitHub Pages](https://pages.github.com)
-* [Font Awesome](https://fontawesome.com)
-* [React Icons](https://react-icons.github.io/react-icons/search)
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
-
+[Next-url]: [https://www.tensorflow.org/]()
+[contributors-url]: [https://github.com/fasih0001/ParallelVision/graphs/contributors]()
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links 
 [contributors-shield]: https://img.shields.io/github/contributors/othneildrew/Best-README-Template.svg?style=for-the-badge
