@@ -17,6 +17,7 @@
 *** See the bottom of this document for the declaration of the reference variables
 *** for contributors-url, forks-url, etc. This is an optional, concise syntax you may use.
 *** https://www.markdownguide.org/basic-syntax/#reference-style-links
+ 
 [![Contributors][contributors-shield]][contributors-url]
 [![Forks][forks-shield]][forks-url]
 [![Stargazers][stars-shield]][stars-url]
@@ -24,6 +25,7 @@
 [![MIT License][license-shield]][license-url]
 [![LinkedIn][linkedin-shield]][linkedin-url]
 -->
+
 [![Contributors](https://img.shields.io/github/contributors/username/repository.svg?style=flat-square)](https://github.com/fasih0001/ParallelVision/graphs/contributors)
 [![Forks](https://img.shields.io/github/forks/username/repository.svg?style=flat-square)](https://github.com/fasih0001/ParallelVision/fork)
 [![Stars](https://img.shields.io/github/stars/username/repository.svg?style=flat-square)](https://github.com/fasih0001/ParallelVision/stargazers)
@@ -234,10 +236,10 @@ Use this space to list resources you find helpful and would like to give credit 
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links 
-[contributors-shield]: https://img.shields.io/github/:variant/:fasih0001/:https://github.com/fasih0001/ParallelVision.git
-[contributors-url]: https://github.com/fasih0001/ParallelVision.git
+[contributors-shield]: https://img.shields.io/github/contributors/othneildrew/Best-README-Template.svg?style=for-the-badge
+[contributors-url]: https://github.com/fasih0001/ParallelVision/graphs/contributors
 [forks-shield]: https://img.shields.io/github/forks/othneildrew/Best-README-Template.svg?style=for-the-badge
-[forks-url]: https://github.com/othneildrew/Best-README-Template/network/members
+[forks-url]: https://github.com/fasih0001/ParallelVision/fork
 [stars-shield]: https://img.shields.io/github/stars/othneildrew/Best-README-Template.svg?style=for-the-badge
 [stars-url]: https://github.com/othneildrew/Best-README-Template/stargazers
 [issues-shield]: https://img.shields.io/github/issues/othneildrew/Best-README-Template.svg?style=for-the-badge
@@ -264,3 +266,4 @@ Use this space to list resources you find helpful and would like to give credit 
 [JQuery.com]: https://img.shields.io/badge/jQuery-0769AD?style=for-the-badge&logo=jquery&logoColor=white
 [JQuery-url]: https://jquery.com 
 -->
+
