@@ -46,8 +46,6 @@
 
   <p align="center">
     An impressive open-source project <br> focused on One CNN per Core Approach <br> for  <br> resource-constrained systems.
-   <br/>
-   STILL WOKING ON THE README !!
     <br />
     <a href="https://github.com/othneildrew/Best-README-Template"><strong>Explore the docs »</strong></a>
     <br />
@@ -60,7 +58,8 @@
   </p>
 </div>
 
-
+   
+## STILL WOKING ON THE README !!
 
 <!-- TABLE OF CONTENTS -->
 <details>
